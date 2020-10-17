@@ -1,0 +1,8 @@
+discord.py
+py-dactyl
+discord
+requests
+ruamel.yaml
+aiohttp
+mariadb
+aioconsole

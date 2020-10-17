@@ -1,0 +1,20 @@
+token: NzYxMzQ1NDcxNTY5OTg1NTQ3.X3ZQOQ.gQq5ATMd9fEw9Hfn8dQGQ3J9gZA
+ptero:
+  url: https://panel.nightservers.xyz
+  api_key: 4T9FRaQ4jp4az7LErH26ZD8NnhJNn6feWYhLWpGL3yIsfVfi
+
+api:
+  server:
+    info_url: https://api.nightservers.xyz/server/info.php?id=
+admin:
+  - 184720162472198144
+  - 422773039084601344
+  - 734765089273675837
+  - 253937964193677323
+
+
+embed:
+  onayrenk: 0x5efafa
+  hatarenk: 0xe85b45
+  market:
+    huba: 0x51ff53
