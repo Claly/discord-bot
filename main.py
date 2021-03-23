@@ -27,7 +27,7 @@ async def console():
             try:
                 await setup()
             except Exception as e:
-                print("Xəta baş verdi\n{}".format(e))
+                print("Hata bulundu\n{}".format(e))
             else:
                 print(f"\n{bot.user.name} Yeniden yüklendi")
         elif cmd.startswith("help"):
