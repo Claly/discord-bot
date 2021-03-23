@@ -1,16 +1,13 @@
 token: 
 ptero:
-  url: https://panel.nightservers.xyz
+  url: 
   api_key: 
 
 api:
   server:
-    info_url: https://api.nightservers.xyz/server/info.php?id=
+    info_url: 
 admin:
-  - 184720162472198144
-  - 422773039084601344
-  - 734765089273675837
-  - 253937964193677323
+  - xx
 
 
 embed:
