@@ -4,5 +4,4 @@ discord
 requests
 ruamel.yaml
 aiohttp
-mariadb
 aioconsole
