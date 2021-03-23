@@ -45,10 +45,12 @@ class Create(commands.Cog):
                         await member.add_roles(role)
                         await member.edit(nick=f"{member.display_name} ({output['attributes']['identifier']})")
                 else:
-                    #geçersiz kullanıcı nibba
+                    embed = discord.Embed(description=f"Kullanıcı geçersiz", color=0xfc0303)
+                    await ctx.channel.send(embed=embed)
                     pass
             else:
-                #yardım mesajı what
+                embed = discord.Embed(description=f"Kullanım !create <mention> <email> <username> <password>", color=0xfc0303)
+                await ctx.channel.send(embed=embed)
                 pass
         else:
             embed = discord.Embed(description="Bu komutu kullanamazsın.", color=0xfc0303)
