@@ -1,6 +1,5 @@
 from discord.ext import commands
 import os
-import sqlite3
 
 from ruamel.yaml import YAML
 from aioconsole import ainput
@@ -10,9 +9,6 @@ from os.path import isfile, join
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"), case_insensitive=True)
 yaml = YAML()
 
-bot.keydata = sqlite3.connect(f"userkeys.db")
-bot.keydata.execute("CREATE TABLE IF NOT EXISTS nightapi (id INTEGER PRIMARY KEY AUTOINCREMENT, discord_id VARCHAR(255), api_key VARCHAR(255))")
-bot.keys = bot.keydata.execute("SELECT * FROM nightapi").fetchall()
 with open("config.yml", "r") as stream:
 	bot.config = yaml.load(stream) 
 bot.remove_command("help")
@@ -33,11 +29,11 @@ async def console():
             except Exception as e:
                 print("Xəta baş verdi\n{}".format(e))
             else:
-                print(f"\n{bot.user.name} Yenidən yükləndi")
+                print(f"\n{bot.user.name} Yeniden yüklendi")
         elif cmd.startswith("help"):
-            print("reload -> yenidən başlayır")
+            print("reload -> yeniden başlatılıyor")
         else:
-            print("bilinməyən əmr")
+            print("bilinmeyen komut")
     await console()
 
 async def setup():
